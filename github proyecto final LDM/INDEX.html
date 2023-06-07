@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Tienda de Llerena</title>
+    <link rel="icon" href="imágenes/logo.jpg">
     <link rel="stylesheet" href="STYLE.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
@@ -12,34 +13,38 @@
 <body>
     
     <div class="cabeza">
-        <div class="logo"><img src="imágenes/logo.jpg" alt="" width="105%" ></div>
+        <div class="logo"><img src="imágenes/logo.jpg" alt="" width="100%" ></div>
         <div class="nombre">    <p style="color: yellow; font-family: hind;">LA TIENDA DE LLERENA</p></div>
         <div class="div_vacio"></div>
-        <div class="productos">  <p>PRODUCTOS </p></div>
-        <div class="ubicacion"> <p>UBICACIÓN</p></div>
-        <div class="contacto"> <p>CONTACTO </p></div>
+        <div class="productos"><a href="#productos" style="text-decoration:none ;">  <p>PRODUCTOS </p></a></div>
+        <div class="ubicacion"><a href="#ubi" style="text-decoration:none ;"> <p>UBICACIÓN</p></a></div>
+        <div class="contacto"><a href="#contacto" style="text-decoration:none ;"> <p>CONTACTO </p></a></div>
     </div>
     
-    <div class="centro">
+    <div class="centro" id="productos">
         <div class="flechas">
-            <div class="flecha-izquierda">&#8249;</div>
-            <div class="flecha-derecha">&#8250;</div>
+            <div class="espacio:::">&#8249;</div>
         </div>
         <div class="contenedor_centro">
-            <div class="alimentacion">  <img src="./imágenes/alimentacion.jpg" alt="" width="100%"> 
+            
+            
+            <div class="alimentacion"> <img src="./imágenes/alimentacion.jpg" alt="" width="100%"> 
             <br><p>ALIMENTACIÓN</p></div>
+            
             
             <div class="bebidas"><img src="./imágenes/bebidas.jpg" alt="" width="100%">
             <br> <p>BEBIDAS</p> </div>
             
+            
             <div class="limpieza"><img src="./imágenes/limpieza.jpg" alt="" width="100%">
              <p>LIMPIEZA DEL HOGAR Y ASEO PERSONAL</p> </div>
+            
         </div>
      </div>
      <div class="contenedor_barra">
         <div class="barra-horizontal"></div>
     </div>
-     <div class="abajo">
+     <div class="abajo" id="alimentacion">
             <div class="alimentaciontitulo"> <p>ALIMENTACIÓN</p></div>
         <div class="alimentacion_abajo1">
             
@@ -61,7 +66,7 @@
             <div class="alimentacion_7"><img src="imágenes/cafe.jpg" alt="" width="100%"></div>
         </div>
         
-        <div class="bebidas_abajo">
+        <div class="bebidas_abajo" id="bebidas">
             <p>BEBIDAS</p>
             <div class="bebidastexto">
                 <p>En el establecimiento podrás encontrar todo tipo de bebidas, como refrescos en lata o botella, zumos y bebidas alcohólicas como vino o cerveza (+18). </p>
@@ -69,7 +74,7 @@
 
         </div>
 
-        <div class="limpieza_abajo">
+        <div class="limpieza_abajo" id="limpieza">
             <p>LIMPIEZA</p>
             <div class="limpieza1"><img src="imágenes/limpieza.jpg" alt="" width="100%"></div>
         </div>    
@@ -81,7 +86,7 @@
 
         
 
-<div class="contenedor_ubi">
+<div class="contenedor_ubi" id="ubi">
     <p>UBICACIÓN</p>
 </div>
 
@@ -91,11 +96,23 @@
 
 
 
-<div class="contenedor_contacto">
+<div class="contenedor_contacto" id="contacto">
     <div class="contacto_abajo">
-        <p></p>
+        <p>CONTACTO</p>
+    </div>
+    <div class="contactopequeño">
+        <p>Teléfono: 664 17 21 93 <br>Correo: latiendadellerena@gmail.com </p>
+    </div>
+    <div class="politicapriv">
+        <a href="politica de privacidad.html" style="text-decoration: none;">
+            <div class="politicatexto">
+               <p>POLITICA DE PRIVACIDAD</p>
+            </div>
+        </a>
     </div>
 </div>
+
+
      <script>
         var map = L.map("map").setView([38.428051, -6.416702], 15); // Coordenadas y nivel de zoom inicial
       

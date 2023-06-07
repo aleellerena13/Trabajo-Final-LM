@@ -2,7 +2,9 @@
     font-family: hind;
     src: url(\Hind-Medium.ttf);
 }
-
+a{
+    text-decoration: none;
+}
 
 body{
     margin: 0;
@@ -12,6 +14,10 @@ body{
     background-color: black;
     padding: 0.5%;
     display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
 }
 .logo{
     width: 5%;
@@ -72,8 +78,8 @@ body{
 .productos p{
     width: auto;
    width: 80%;
-   padding-left: 3%;
-   padding-right:3%;
+   padding-left: 4%;
+   padding-right:4%;
    border-radius: 8px;
    background-color:black;
    color: yellow;
@@ -107,7 +113,9 @@ body{
     margin-left: 7%;
     margin-right: 7%;
 }
-
+.centro{
+    margin-top: 8%;
+}
 .alimentacion{
     width: 36%;
     padding: 1%;
@@ -121,12 +129,13 @@ body{
     font-family: hind;
     text-align: center;
     
+    
 }
 .alimentacion:hover{
     
     background-color: black;
     color: white;
-    cursor: pointer;
+    
 }
 .bebidas{
     width: 20.3%;
@@ -138,7 +147,7 @@ body{
     
     background-color: black;
     color: white;
-    cursor: pointer;
+    
 }
 .bebidas p{
     font-size: 160%;
@@ -155,7 +164,7 @@ body{
     
     background-color: black;
     color: white;
-    cursor: pointer;
+    
     
 }
 .limpieza p{
@@ -335,6 +344,7 @@ body{
     padding: 1%;
     background-color: black;
     border-radius: 8px;
+    z-index: 0;
 
 }
 .contenedor_ubi p{
@@ -344,3 +354,334 @@ body{
     margin-left: -1%;
     margin-top: 4%;
 }
+.contenedor_contacto{
+    background-color: black;
+
+}
+.contacto_abajo p{
+    font-family: hind;
+    font-size: 200%;
+    text-align: center;
+    margin-left: -1%;
+    margin-top: 4%;
+    color: yellow;
+    margin-bottom: -2%;
+}
+.contactopequeño p{
+    font-family: hind;
+    font-size: 140%;
+    text-align: center;
+    margin-left: -1%;
+    
+    color: yellow;
+    margin-bottom: 1%;
+}
+.contactopequeño{
+    padding-bottom: 0.3%;
+}
+.volver p:hover{
+    background-color: yellow;
+  color: black;
+  cursor: pointer;
+  background-position: 0 0;
+}
+.volver p{
+   
+   width: auto;
+   width: 100%;
+   padding-left: 3%;
+   padding-right:3%;
+   border-radius: 8px;
+   background-color:black;
+   color: yellow;
+   transition: color 0.3s, background-position 0.3s;
+   background-position: 100% 0;
+   font-family: hind; font-size: 140%;
+}
+.div_vaciopol{
+    width: 45%;
+}
+.contenedor_politicapriv p{
+    margin-top: 5%;
+    font-family: hind;
+    font-size: 120%;
+    text-align: center;
+}
+.contenedor_politicapriv{
+    width: 60%;
+    margin-left: 20%;
+}
+.politicatexto p{
+    font-family: hind;
+    font-size: 140%;
+    text-align: center;
+    margin-left: -1%;
+    
+    color: yellow;
+    padding-bottom: 2%;
+}
+
+@media screen and (max-width: 768px) {
+    .cabeza {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .logo {
+        width: 20%;
+        padding: 1%;
+        padding-bottom: 0.5%;
+        background-color: yellow;
+        border-radius: 8px;
+        margin-top: 3%;
+    }
+
+    .nombre {
+        margin-left: 0;
+        width: 70%;
+        text-align: center;
+    }
+
+    .productos,
+    .ubicacion,
+    .contacto {
+        width: 30%;
+        margin-left: 8%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .contenedor_centro {
+        margin-left: 0;
+        margin-right: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    .alimentacion,
+    .bebidas,
+    .limpieza {
+        width: 60%;
+        margin-bottom: 10px;
+    }
+    .alimentacion_abajo1{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .alimentacion_abajo2{
+        width: 91%;
+        margin-left: 9%;
+        
+    }
+    .alimentacion_4{
+        width: 72%;
+        margin-left: 7%;
+    
+    }
+    .alimentacion_5{
+        width:100%;
+        margin-left: 20%;
+        margin-right: 15%;
+    }
+    
+    .alimentacion_abajo3{
+        width: 91%;
+        margin-left: 9%;
+        
+    }
+    .alimentacion_6{
+        width: 70%;
+        margin-left: 7%;
+        
+        height: 100%;
+    }
+    .alimentacion_7{
+        width:90%;
+        margin-left: 15%;
+        margin-right: 12%;
+        
+    }
+    .bebidas_abajo{
+        width: 96%;
+        margin-left: 4%;
+        
+        
+    }
+    .limpieza_abajo2{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 10%;
+    }
+    .limpieza_abajo{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 10%;
+    }
+    .limpieza2{
+        margin: 0;
+    }
+    .mapa {
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 10px;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .cabeza {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 96%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .logo {
+        width: 20%;
+        padding: 1%;
+        padding-bottom: 0.5%;
+        background-color: yellow;
+        border-radius: 8px;
+        margin-top: 3%;
+    }
+
+    .nombre {
+        margin-left: 0;
+        width: 70%;
+        text-align: center;
+    }
+
+    .productos,
+    .ubicacion,
+    .contacto {
+        width: 30%;
+        margin-left: 8%;
+        margin-bottom: 10px;
+        padding-right: 10%;
+        text-align: center;
+    }
+
+    .contenedor_centro {
+        margin-left: 0;
+        margin-right: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    .alimentacion,
+    .bebidas,
+    .limpieza {
+        width: 60%;
+        margin-bottom: 10px;
+    }
+    .productos p{
+    
+       width: 80%;
+       padding-left: 13%;
+       padding-right:17%;
+       border-radius: 8px;
+       background-color:black;
+       color: yellow;
+       transition: color 0.3s, background-position 0.3s;
+       background-position: 100% 0;
+       font-family: hind; font-size: 140%;
+    }
+    .ubicacion p{
+    
+        width: 80%;
+        padding-left: 15%;
+        padding-right:15%;
+        border-radius: 8px;
+        background-color:black;
+        color: yellow;
+        transition: color 0.3s, background-position 0.3s;
+        background-position: 100% 0;
+        font-family: hind; font-size: 140%;
+     }
+     .contacto p{
+    
+        width: 80%;
+        padding-left: 15%;
+        padding-right:15%;
+        border-radius: 8px;
+        
+        background-color:black;
+        color: yellow;
+        transition: color 0.3s, background-position 0.3s;
+        background-position: 100% 0;
+        font-family: hind; font-size: 140%;
+     }
+    .alimentacion_abajo1{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .alimentacion_abajo2{
+        width: 91%;
+        margin-left: 9%;
+        
+    }
+    .alimentacion_4{
+        width: 72%;
+        margin-left: 7%;
+    
+    }
+    .alimentacion_5{
+        width:100%;
+        margin-left: 20%;
+        margin-right: 15%;
+    }
+    
+    .alimentacion_abajo3{
+        width: 91%;
+        margin-left: 9%;
+        
+    }
+    .alimentacion_6{
+        width: 70%;
+        margin-left: 7%;
+        
+        height: 100%;
+    }
+    .alimentacion_7{
+        width:90%;
+        margin-left: 15%;
+        margin-right: 12%;
+        
+    }
+    .bebidas_abajo{
+        width: 96%;
+        margin-left: 4%;
+        
+        
+    }
+    .limpieza_abajo2{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 10%;
+    }
+    .limpieza_abajo{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 10%;
+    }
+    .limpieza2{
+        margin: 0;
+    }
+    .mapa {
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 10px;
+        padding: 0;
+    }
+}
+
